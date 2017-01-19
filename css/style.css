@@ -1,0 +1,65 @@
+html, body, menu, section,
+p, div, span, img, a,
+h1, h2, h3, h4,
+ul, ol, dl, li, dt, dd,
+table, tr, th, td,
+pre, code {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-weight: normal;
+  font-size: 100%;
+  box-sizing: border-box;
+  word-wrap: break-word; }
+
+pre {
+  white-space: pre-wrap; }
+
+header, footer, nav, section, main {
+  display: block; }
+
+ol, ul {
+  list-style-type: none; }
+
+/* clearfix */
+div:after, ul:after, ol:after {
+  content: "";
+  clear: both; }
+
+#slideshow {
+  position: relative;
+  height: 100vh;
+  background-color: #ccc; }
+  #slideshow img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100vh;
+    z-index: 3; }
+  #slideshow .active {
+    z-index: 5; }
+  #slideshow .last-active {
+    z-index: 4; }
+
+.slide_button a {
+  position: fixed;
+  top: 50vh;
+  margin-top: -15px;
+  padding: 10px 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  text-decoration: none;
+  z-index: 10;
+  color: #fff;
+  font-size: 20px; }
+.slide_button .prev {
+  left: 0; }
+.slide_button .next {
+  right: 0; }
+
+/*# sourceMappingURL=style.css.map */
